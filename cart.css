@@ -1,0 +1,147 @@
+.cart{
+    text-align: center;
+}
+#YourCart{
+    text-align: center;
+}
+#cart-list{
+    text-align: center;
+}
+#total{
+    text-align: center;
+}
+
+
+  .payment-section {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+
+  .payment-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  /* Tabs */
+  .payment-tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #eee;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .tab-btn.active {
+    background: linear-gradient(135deg, #4a90e2, #007bff);
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .tab-btn:hover {
+    background: #ddd;
+  }
+
+  /* Payment Forms */
+  .payment-form {
+    display: none;
+  }
+  .payment-form.active {
+    display: block;
+  }
+
+  .payment-form .form-group {
+    margin-bottom: 15px;
+  }
+
+  .payment-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+  }
+
+  .payment-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: 0.3s;
+  }
+
+  .payment-form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: #fff;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }
+
+  .pay-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #4a90e2, #007bff);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+  }
+  #back-btn{
+      align-items: center;
+      margin: 0 auto;      /* auto margin দিলে center এ চলে যাবে */
+      width: 200px;  
+       display: block;       /* inline → block */
+          /* চাইলে নির্দিষ্ট width */
+        
+        padding: 10px;
+        color: red;
+        background-color: #333;
+
+        }
+
+  .pay-btn:hover {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    transform: translateY(-2px);
+  }
+
+  .pay-btn:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+    }
+  }
+
+

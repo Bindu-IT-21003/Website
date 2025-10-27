@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login HTML CSS</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+
+  <script>
+    // Redirect on login
+    document.getElementById("loginForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      window.location.href = "indoor.html";
+    });
+  </script>
+
+</head>
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <form action="indoor.html" method="get">
+   <h3>Login</h3>
+   
+   <label for="username">Username
+    <input type="email" placeholder="Email or Phone" required>
+   </label>
+
+   <label for="username">Password
+    <input type="password" placeholder="Password" required>
+   </label>
+
+   <button type="submit">Log in</button><br><br>
+
+    <div class="social">
+      <div class="go">
+        <i class="fab fa-google" style="color: rgb(63, 191, 95);"></i>google
+      </div>
+    </div>
+   
+
+    <div class="form">
+      <p>Don't have an account? <a href="register.html">Create One</a> </p>
+    </div>
+  </form>
+
+ 
+
+</body>
+</html>
